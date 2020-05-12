@@ -1152,3 +1152,18 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 !MESSAGE Help document /org.eclipse.datatools.doc.isv/html/reference/extension-points/org_eclipse_datatools_sqltools_debugger_core_sourceLocatorProvider.html cannot be opened.
 !SUBENTRY 1 org.eclipse.help.base 4 4 2020-05-11 18:26:17.034
 !MESSAGE Help document /org.eclipse.datatools.doc.isv/html/reference/api/org/eclipse/datatools/connectivity/oda/util/manifest/package-summary.html cannot be opened.
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-05-12 21:48:51.985
+!MESSAGE Invalid ZIP archive: src/alien.txt [in WordCount]
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2020-05-12 21:48:53.312
+!MESSAGE Taglib Index ZipException: C:/Users/User/eclipse-workspace/WordCount/src/alien.txt error in opening zip file
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-05-12 21:48:57.291
+!MESSAGE Invalid ZIP archive: src/alien.txt [in WordCount]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-05-12 21:49:01.375
+!MESSAGE Invalid ZIP archive: src/alien.txt [in WordCount]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-05-12 21:49:01.376
+!MESSAGE Invalid ZIP archive: src/alien.txt [in WordCount]
