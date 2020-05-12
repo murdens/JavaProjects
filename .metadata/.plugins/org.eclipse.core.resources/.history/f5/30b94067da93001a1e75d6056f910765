@@ -1,0 +1,36 @@
+package test;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ContactsManager myContactsManager = new ContactsManager();
+		
+		Contact friendGeorge = new Contact();
+		
+		friendGeorge.name = "George";
+		friendGeorge.phoneNumber = "07739962448";
+		
+		myContactsManager.addContact(friendGeorge);
+		
+		Contact friendZippy = new Contact();
+		
+		friendZippy.name = "Zippy";
+		friendZippy.phoneNumber = "07739962446";
+		
+		myContactsManager.addContact(friendZippy);
+		
+		Contact friendBungle = new Contact();
+		
+		friendBungle.name = "Bungle";
+		friendBungle.phoneNumber = "07739962447";
+		
+		myContactsManager.addContact(friendZippy);
+
+		
+		Contact result = myContactsManager.searchContact("Zippy");
+		
+		System.out.println(result.phoneNumber);
+	}
+
+}

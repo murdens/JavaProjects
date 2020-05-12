@@ -1,0 +1,9 @@
+package test;
+
+public class Scanner {
+	System.out.println("Enter Your Address: ");
+	Scanner scanner = new Scanner(System.in);
+	String address = scanner.nextLine();
+	System.out.println("Your Address is: "+ address);
+
+}

@@ -1,0 +1,18 @@
+
+
+package test;
+
+import java.util.Scanner;
+
+public class Main {
+
+	
+	public static void main(String[] args) {
+
+		int randomNumber = (int) (Math.random() * 100 +1);
+		
+		System.out.println("I have randomly generated a number between 1 & 100");
+		System.out.println("Try to guess it.");
+		System.out.println(randomNumber);
+	}
+}
