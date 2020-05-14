@@ -93,10 +93,10 @@ public class PlayGame {
 	public String cryptoMovie() {
 		
 		if(correctGuesses.equals("")) {
-		return movie.replaceAll ( "[a-z0-9]", " _" );
+		return movie.replaceAll ( "[a-z0-9]", " _ " );
 		}
 		else {
-			return movie.replaceAll("[a-z0-9&&[^"+correctGuesses+"]]", " _");
+			return movie.replaceAll("[a-z0-9&&[^"+correctGuesses+"]]", " _ ");
 		}
 		
 	}
