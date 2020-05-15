@@ -10,6 +10,7 @@ public class GameHelper {
 	private String movie;
 	private static List<String> movies = new ArrayList<String>();
 	
+	// constructor for helper class to set up movie list
 	public GameHelper(String path) {
 		
 		File file = new File(path);
@@ -26,6 +27,7 @@ public class GameHelper {
 		}
 	}
 	
+	// method to chose random
 	public String getRandomMovie() {
 				
 		int arraySize = movies.size();
@@ -35,7 +37,5 @@ public class GameHelper {
 		// select movie title
 		return movie = movies.get(randomNumber);
 	}
-	
-	
-		
+			
 }

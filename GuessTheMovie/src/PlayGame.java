@@ -1,6 +1,4 @@
 
-
-
 import java.util.Scanner;
 
 public class PlayGame {
@@ -10,9 +8,10 @@ public class PlayGame {
 	private int guessCount;
 	private String correctGuesses;
 	private String wrongGuesses;
-		private boolean gameWon = false;
+	private boolean gameWon = false;
 	
-	
+
+	// class constructor, calls class to set up game.
 	public PlayGame(String path) {
 		GameHelper helper = new GameHelper(path);
 		movie = helper.getRandomMovie();
@@ -22,7 +21,7 @@ public class PlayGame {
 		wrongGuesses = "";
 	}
 	
-		
+	//	Method to assess game play
 	public void startPlaying() {
 		
 	String guessLetter = getGuess();
@@ -40,6 +39,7 @@ public class PlayGame {
 	}
 	
 		
+	// method to obtain user input
 	private String getGuess() {
 		
 		System.out.println("");
@@ -63,6 +63,7 @@ public class PlayGame {
 	}
 
 
+	// method to display movie
 	public String cryptoMovie() {
 		
 		if(correctGuesses.equals("")) {
@@ -75,6 +76,7 @@ public class PlayGame {
 	}
 	
 
+	// method to check scoring of game and declare winner/loser.
      public boolean finishGame() {
 	 
 	    if(guessCount >= 10) {
