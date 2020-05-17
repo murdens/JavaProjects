@@ -30,9 +30,8 @@ public class GameHelper {
 	// method to chose random
 	public String getRandomMovie() {
 				
-		int arraySize = movies.size();
 		//randomly select number for index search
-		int randomNumber = (int) (Math.random() * arraySize);
+		int randomNumber = (int) (Math.random() * movies.size());
 		
 		// select movie title
 		return movie = movies.get(randomNumber);

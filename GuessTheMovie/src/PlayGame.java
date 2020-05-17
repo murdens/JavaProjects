@@ -79,7 +79,7 @@ public class PlayGame {
 	// method to check scoring of game and declare winner/loser.
      public boolean finishGame() {
 	 
-	    if(guessCount >= 10) {
+	    if(guessCount >= 12) {
 		return true;
 	    }
 	 
