@@ -11,7 +11,7 @@ public class Rock extends Piece {
 	
 	 boolean isValidMove(Position newPosition){
 		 
-		 if(!super.isValidMove(position)) {
+		 if(!super.isValidMove(newPosition)) {
 			 return false;
 		 }
 	      if(newPosition.column == this.column || newPosition.row == this.row){

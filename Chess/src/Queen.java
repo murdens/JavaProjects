@@ -13,7 +13,7 @@ public class Queen extends Piece {
 	
 	 boolean isValidMove(Position newPosition){
 
-		 if(!super.isValidMove(position)) {
+		 if(!super.isValidMove(newPosition)) {
 			 return false;
 		 }
 		 

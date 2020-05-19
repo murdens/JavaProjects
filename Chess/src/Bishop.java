@@ -7,13 +7,14 @@ public class Bishop extends Piece {
 
 	public Bishop() {
 		super();
+		this.position = new Position(0,4);
 		this.name = "bishop";
 	}
 	
 	
 	boolean isValidMove(Position newPosition){
 
-		 if(!super.isValidMove(position)) {
+		 if(!super.isValidMove(newPosition)) {
 			 return false;
 		 }
 	    
