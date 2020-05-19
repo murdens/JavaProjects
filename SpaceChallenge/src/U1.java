@@ -25,7 +25,6 @@ public class U1 extends Rocket {
     landCrash = 0.01;
     
     
-    
 	}
 	
 		public boolean launch() {
@@ -35,7 +34,7 @@ public class U1 extends Rocket {
 			
 			System.out.println("Chance of explosion: "+ launched);
 			System.out.println("Check: "+ result);
-			System.out.println("Check weight: "+ current);
+			System.out.println("Check weight: "+ currentWeight);
 			if (new Random().nextDouble()  <= launched ) {
 				//System.out.println("U1 Rocket Exploded");
 				return false;
