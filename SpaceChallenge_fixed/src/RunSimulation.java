@@ -30,13 +30,13 @@ public class RunSimulation {
         loadItemList = simulation.loadItems(phase1); 
         rocketsU1Loaded = (ArrayList<U1>) simulation.loadU1(loadItemList);
         budgetU1Ph1 = simulation.runU1Simulation(rocketsU1Loaded);
-        System.out.println("U1 Phase1: Rockets required to carry items "+rocketsU1Loaded.size()+" at a cost including any destroyed: $"+budgetU1Ph1);
+        System.out.println("U1 Phase1: Rockets required to carry items "+rocketsU1Loaded.size()+", at a cost including any destroyed $"+budgetU1Ph1+ "m.");
         
         
         loadItemList = simulation.loadItems(phase2); 
         rocketsU1Loaded = (ArrayList<U1>) simulation.loadU1(loadItemList);
         budgetU1Ph2 = simulation.runU1Simulation(rocketsU1Loaded);
-        System.out.println("U1 Phase2: Rockets required to carry items "+rocketsU1Loaded.size()+" at a cost including any destroyed: $"+budgetU1Ph2);
+        System.out.println("U1 Phase2: Rockets required to carry items "+rocketsU1Loaded.size()+", at a cost including any destroyed $"+budgetU1Ph2+ "m.");
         
         totalBudgetU1 = budgetU1Ph1 + budgetU1Ph2;
         System.out.println("Total cost simulation of U1: $" + totalBudgetU1 + " millions.");
@@ -45,15 +45,15 @@ public class RunSimulation {
         loadItemList = simulation.loadItems(phase1); 
         rocketsU2Loaded = (ArrayList<U2>) simulation.loadU2(loadItemList);
         budgetU2Ph1 = simulation.runU2Simulation(rocketsU2Loaded);   
-        System.out.println("U2 Phase1: Rockets required to carry items "+rocketsU2Loaded.size()+" at a cost including any destroyed: $"+budgetU2Ph1);
+        System.out.println("U2 Phase1: Rockets required to carry items "+rocketsU2Loaded.size()+", at a cost including any destroyed $"+budgetU2Ph1+ "m.");
         
         loadItemList = simulation.loadItems(phase2); 
         rocketsU2Loaded = (ArrayList<U2>) simulation.loadU2(loadItemList);
         budgetU2Ph2 = simulation.runU2Simulation(rocketsU2Loaded);
-        System.out.println("U2 Phase2: Rockets required to carry items "+rocketsU2Loaded.size()+" at a cost including any destroyed: $"+budgetU2Ph2);
+        System.out.println("U2 Phase2: Rockets required to carry items "+rocketsU2Loaded.size()+", at a cost including any destroyed $"+budgetU2Ph2+ "m.");
         
         totalBudgetU2 = budgetU2Ph1 + budgetU2Ph2;
-        System.out.println("Total cost simulation of U2: $" + totalBudgetU2 + " millions.");
+        System.out.println("Total cost simulation of U2: $" + totalBudgetU2 + "m.");
         
 	}
 
