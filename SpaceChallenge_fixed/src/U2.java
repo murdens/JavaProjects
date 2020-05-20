@@ -1,7 +1,7 @@
 import java.util.Random;
 
 /**
- * Create classes U1 that extend the Rocket class and override the land and launch methods to
+ * Create classes U2 that extend the Rocket class and override the land and launch methods to
  * calculate the corresponding chance of exploding and return either true or false based on
  * a random number using the probability equation.
  *

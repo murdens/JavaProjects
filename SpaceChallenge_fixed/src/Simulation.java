@@ -9,7 +9,7 @@ public class Simulation {
      * loadItems should read the text file line by line and create an Item object for each
      * then add it to an ArrayList of Items. The method should then return that ArrayList.
      * @param textFile
-     * @return listOfItems
+     * @return loadItemList
      * @throws Exception
      */
 	
@@ -35,8 +35,8 @@ public class Simulation {
      * and starts creating U1 rockets. It first tries to fill up 1 rocket with as many items as possible
      * before creating a new rocket object and filling that one until all items are loaded.
      * The method then returns the ArrayList of those U1 rockets that are fully loaded.
-     * @param listOfItems
-     * @return
+     * @param loadItemList
+     * @return rocketsLoaded
      */
     
     public ArrayList<U1> loadU1(ArrayList<Item> loadItemList){
@@ -65,12 +65,9 @@ public class Simulation {
         }
 		rocketsLoaded.add(rocketU1);
 		System.out.println("Loaded items U1 sim: "+itemCount);
-		System.out.println("Rocket count U1 sim: "+ numberOfRockets);
+		System.out.println("Rockets loaded U1 sim: "+ numberOfRockets);
         return rocketsLoaded;
     }		
-     
-           
-
          
     
     /**
@@ -78,8 +75,8 @@ public class Simulation {
      * and starts creating U1 rockets. It first tries to fill up 1 rocket with as many items as possible
      * before creating a new rocket object and filling that one until all items are loaded.
      * The method then returns the ArrayList of those U1 rockets that are fully loaded.
-     * @param listOfItems
-     * @return
+     * @param loadItemList
+     * @return rocketsLoaded
      */
     
 
@@ -108,7 +105,7 @@ public class Simulation {
         }
 		rocketsLoaded.add(rocketU2);
 		System.out.println("Loaded items U2 sim: "+itemCount);
-		System.out.println("Rocket count U2 sim: "+ numberOfRockets);
+		System.out.println("Rocket loaded U2 sim: "+ numberOfRockets);
         return rocketsLoaded;
     }		
              
@@ -119,32 +116,42 @@ public class Simulation {
      * that rocket again. All while keeping track of the total budget required to 
      * send each rocket safely to Mars. runSimulation then returns the total budget 
      * required to send all rockets (including the crashed ones).
-     * @return 
+     * @return totalBudget
      */
     
     public int runU1Simulation(ArrayList<U1> rocketsLoaded) {
     	int totalBudget = 0;
-    	
+    	int shipDestroyed = 0;
+    
     	for (int i=0;i < rocketsLoaded.size();i++) {
     		Rocket rocket = rocketsLoaded.get(i);
     		while (!rocket.launch() || !rocket.land()) {
     			totalBudget += rocket.rocketCost;
+    			shipDestroyed++;
+    			
     		}
     		totalBudget += rocket.rocketCost;
     	}	
+    	System.out.println("U1 ships destroyed: "+shipDestroyed);
     return totalBudget;
     }
 
-public int runU2Simulation(ArrayList<U2> rocketsLoaded) {
-	int totalBudget = 0;
+    public int runU2Simulation(ArrayList<U2> rocketsLoaded) {
+    	int totalBudget = 0;
+    	int shipDestroyed = 0;
 	
-	for (int i=0;i < rocketsLoaded.size();i++) {
+    	for (int i=0;i < rocketsLoaded.size();i++) {
 		Rocket rocket = rocketsLoaded.get(i);
-		while (!rocket.launch() || !rocket.land()) {
+			while (!rocket.launch() || !rocket.land()) {
+				totalBudget += rocket.rocketCost;
+				shipDestroyed++;
+			
+			}
 			totalBudget += rocket.rocketCost;
-		}
-		totalBudget += rocket.rocketCost;
-	}	
-return totalBudget;
-}
+    	}	
+    	System.out.println("U2 ships destroyed: "+shipDestroyed);
+	return totalBudget;
+
+    }
+    
 }
