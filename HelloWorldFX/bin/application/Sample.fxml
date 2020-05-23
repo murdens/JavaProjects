@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+	
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+
+	<Label text="Welcome to JavaFX" textFill="Green">
+	<font>
+		<Font size="50" name="Times New Roman bold"/>
+	</font>
+	
+	</Label>
+	<!-- TODO Add Nodes -->
+</GridPane>

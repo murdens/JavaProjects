@@ -1667,6 +1667,16 @@ IEclipsePreferences#org-eclipse-e4-CSS {
 		'org.eclipse.e4.CSS.syntaxColorer.tokenStyles.string.color=230,255,153'
 		'org.eclipse.e4.CSS.syntaxColorer.tokenStyles.ClassID.color=237,233,246'
 }
+IEclipsePreferences#org-eclipse-emf-mwe2-language-ui {
+	preferences:
+		'syntaxColorer.deprecated_element.color=165,30,52'
+		'syntaxColorer.deprecated_element.style=536870912'
+		'syntaxColorer.feature_ref.color=17,139,189'
+		'syntaxColorer.property_ref.color=102,225,248'
+		'syntaxColorer.property_ref.style=2'
+		'syntaxColorer.string_prop_ref.color=167,236,33'
+		'syntaxColorer.string_prop_ref.style=1'
+}
 IEclipsePreferences#org-eclipse-epp-mpc-ui {
 	preferences:
 		'native-borders=false'
@@ -2198,6 +2208,10 @@ IEclipsePreferences#org-eclipse-ui-workbench {
 		'org.eclipse.wst.jsdt.ui.typeArgumentHighlighting=255,255,0'
 		'org.eclipse.wst.jsdt.ui.typeParameterHighlighting=247,173,123'
 		'org.eclipse.wst.jsdt.ui.typeVariableDeclarationHighlighting=247,173,123'
+		'org.springframework.ide.eclipse.boot.dash.AltTextDecorColor=173,216,230'
+		'org.springframework.ide.eclipse.boot.dash.MutedTextDecorColor=205,210,214'
+		'org.springframework.ide.eclipse.boot.dash.TextDecorColor=144,238,144'
+		'org.springframework.tooling.ls.eclipse.commons.STS4BootMarkerIndicationColor=54,81,25'
 		'piBorder=0,254,254'
 		'tagAttributeName=255,0,255'
 		'tagAttributeValue=212,0,255'
@@ -2363,6 +2377,48 @@ IEclipsePreferences#org-eclipse-xtend-core-Xtend {
 		'org.eclipse.xtend.core.Xtend.syntaxColorer.tokenStyles.xbase.static.method.invocation.color=237,233,246'
 		'org.eclipse.xtend.core.Xtend.syntaxColorer.tokenStyles.xtend.richText.bgColor=39,44,48'
 }
+IEclipsePreferences#org-eclipse-xtend-ide {
+	preferences:
+		'syntaxColorer.xtend.active.annotation.color=165,46,0'
+		'syntaxColorer.xtend.insignificant.template.text.color=23,198,163'
+		'syntaxColorer.xtend.potential.line.break.color=23,198,163'
+		'syntaxColorer.xtend.richText.bgColor=69,78,84'
+		'syntaxColorer.xtend.richText.color=23,198,163'
+		'syntaxColorer.xtend.template.line.bgColor=69,78,84'
+		'syntaxColorer.xtend.template.line.break.color=23,198,163'
+}
+IEclipsePreferences#org-eclipse-xtext-ui {
+	preferences:
+		'syntaxColorer.comment.color=85,96,104'
+		'syntaxColorer.default.color=227,230,232'
+		'syntaxColorer.error.color=173,25,62'
+		'syntaxColorer.keyword.color=214,38,99'
+		'syntaxColorer.keyword.style=1'
+		'syntaxColorer.number.color=104,151,187'
+		'syntaxColorer.punctuation.color=227,230,232'
+		'syntaxColorer.string.color=41,197,163'
+		'syntaxColorer.task.color=126,140,149'
+		'syntaxColorer.task.style=1'
+		'syntaxColorer.xbase.annotation.color=255,147,147'
+		'syntaxColorer.xbase.deprecated.members.color=165,30,52'
+		'syntaxColorer.xbase.deprecated.members.style=536870912'
+		'syntaxColorer.xbase.extension.method.invacation.color=165,46,0'
+		'syntaxColorer.xbase.field.color=102,225,248'
+		'syntaxColorer.xbase.static.field.color=141,218,248'
+		'syntaxColorer.xbase.static.field.style=2'
+		'syntaxColorer.xbase.static.method.invocation.color=150,236,63'
+		'syntaxColorer.xbase.static.method.invocation.style=2'
+}
+IEclipsePreferences#org-eclipse-xtext-xtext-ui {
+	preferences:
+		'syntaxColorer.DataTypeIndicator.color=141,218,248'
+		'syntaxColorer.NeverCalledRule.color=115,130,140'
+		'syntaxColorer.RuleDeclaration.color=17,139,189'
+		'syntaxColorer.SpecialFeature.color=165,46,0'
+		'syntaxColorer.TypeReference.color=102,225,248'
+		'syntaxColorer.TypeReference.style=2'
+		'syntaxColorer.UnusedValue.color=115,130,140'
+}
 IEclipsePreferences#org-epic-perleditor {
 	preferences:
 		'taskIndicationColorBold=false'
@@ -2470,32 +2526,34 @@ IEclipsePreferences#org-nodeclipse-enide-editors-jade {
 }
 IEclipsePreferences#org-python-pydev {
 	preferences:
-		'STRING_COLOR=230,255,153'
-		'NUMBER_STYLE=0'
-		'COMMENT_COLOR=153,150,139'
-		'EDITOR_MATCHING_BRACKETS_COLOR=237,233,246'
-		'FUNC_NAME_COLOR=237,233,246'
-		'OPERATORS_COLOR=237,233,246'
-		'SELF_COLOR=204,153,255'
-		'PARENS_COLOR=237,233,246'
+		'BACKQUOTES_COLOR=188,173,173'
+		'BACKQUOTES_STYLE=0'
+		'CLASS_NAME_COLOR=237,233,246'
 		'CLASS_NAME_STYLE=0'
 		'CODE_COLOR=188,173,173'
-		'PARENS_STYLE=0'
-		'KEYWORD_COLOR=204,153,255'
-		'STRING_STYLE=0'
-		'EDITOR_MATCHING_BRACKETS_STYLE=0'
-		'CLASS_NAME_COLOR=237,233,246'
-		'BACKQUOTES_STYLE=0'
-		'NUMBER_COLOR=240,128,128'
-		'OPERATORS_STYLE=0'
-		'BACKQUOTES_COLOR=188,173,173'
-		'DECORATOR_COLOR=199,199,199'
-		'KEYWORD_STYLE=0'
-		'FUNC_NAME_STYLE=0'
-		'DECORATOR_STYLE=0'
 		'CODE_STYLE=0'
-		'SELF_STYLE=0'
+		'COMMENT_COLOR=153,150,139'
 		'COMMENT_STYLE=0'
+		'DECORATOR_COLOR=199,199,199'
+		'DECORATOR_STYLE=0'
+		'DOCSTRING_MARKUP_COLOR=29,116,150'
+		'EDITOR_MATCHING_BRACKETS_COLOR=237,233,246'
+		'EDITOR_MATCHING_BRACKETS_STYLE=0'
+		'FUNC_NAME_COLOR=237,233,246'
+		'FUNC_NAME_STYLE=0'
+		'KEYWORD_COLOR=204,153,255'
+		'KEYWORD_STYLE=0'
+		'NUMBER_COLOR=240,128,128'
+		'NUMBER_STYLE=0'
+		'OPERATORS_COLOR=237,233,246'
+		'OPERATORS_STYLE=0'
+		'PARENS_COLOR=237,233,246'
+		'PARENS_STYLE=0'
+		'SELF_COLOR=204,153,255'
+		'SELF_STYLE=0'
+		'STRING_COLOR=230,255,153'
+		'STRING_STYLE=0'
+		'UNICODE_COLOR=23,198,163'
 }
 IEclipsePreferences#org-scala-ide-play2 {
 	preferences:
